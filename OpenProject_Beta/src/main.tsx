@@ -7,6 +7,7 @@ import Contador from './pages/Contador.tsx'
 import Operaciones from './pages/Operaciones_basicas.tsx'
 import ListaTareas from './pages/ListaTareas.tsx'
 import VerificadorEdad from './pages/VerificadorEdad.tsx'
+import Primos from './pages/Primos.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/operaciones" element={<Operaciones />} />
         <Route path="/tareas" element={<ListaTareas />} />
         <Route path="/edad" element={<VerificadorEdad />} />
+        <Route path="/primos" element={<Primos />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
