@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.tsx'
 import Contador from './pages/Contador.tsx'
 import Operaciones from './pages/Operaciones_basicas.tsx' // ← agregar
+import Primos from './pages/Primos.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />} />
         <Route path="/contador" element={<Contador />} />
         <Route path="/operaciones" element={<Operaciones />} /> {/* ← agregar */}
+        <Route path="/primos" element={<Primos />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
