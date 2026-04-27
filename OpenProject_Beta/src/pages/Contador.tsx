@@ -13,7 +13,7 @@ export default function Contador() {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem', marginTop: '3rem' }}>
         <div style={{
           fontSize: '5rem', fontWeight: '700',
-          color: 'var(--accent)', background: 'var(--card-bg)',
+          color: 'var(--accent)', background: 'var(--bg-card)',
           borderRadius: '24px', padding: '2rem 4rem',
           boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
         }}>
@@ -24,7 +24,7 @@ export default function Contador() {
           <button onClick={() => setCount(count - 1)} style={{
             fontSize: '2rem', padding: '0.8rem 2rem',
             borderRadius: '12px', border: 'none',
-            background: '#ef4444', color: 'white',
+            background: 'var(--danger)', color: 'white',
             cursor: 'pointer', fontWeight: '700'
           }}>−</button>
 
@@ -38,7 +38,7 @@ export default function Contador() {
           <button onClick={() => setCount(count + 1)} style={{
             fontSize: '2rem', padding: '0.8rem 2rem',
             borderRadius: '12px', border: 'none',
-            background: '#22c55e', color: 'white',
+            background: 'var(--success)', color: 'white',
             cursor: 'pointer', fontWeight: '700'
           }}>+</button>
         </div>
