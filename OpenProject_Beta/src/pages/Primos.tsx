@@ -66,7 +66,7 @@ export default function Primos() {
         {resultado !== null && (
           <div style={{
             fontSize: '1.5rem', fontWeight: '700',
-            color: 'var(--accent)', background: 'var(--card-bg)',
+            color: 'var(--accent)', background: 'var(--bg-card)',
             borderRadius: '24px', padding: '1.5rem 3rem',
             boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
             textAlign: 'center'

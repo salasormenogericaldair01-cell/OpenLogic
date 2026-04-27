@@ -68,7 +68,7 @@ export default function ListaTareas() {
           {tareas.map(tarea => (
             <div key={tarea.id} style={{
               display: 'flex', alignItems: 'center', gap: '1rem',
-              background: 'var(--card-bg)', borderRadius: '12px',
+              background: 'var(--bg-card)', borderRadius: '12px',
               padding: '1rem', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
             }}>
               <input
@@ -87,7 +87,7 @@ export default function ListaTareas() {
               <button onClick={() => eliminar(tarea.id)} style={{
                 padding: '0.4rem 0.8rem', fontSize: '0.9rem',
                 borderRadius: '8px', border: 'none',
-                background: '#ef4444', color: 'white',
+                background: 'var(--danger)', color: 'white',
                 cursor: 'pointer'
               }}>🗑️</button>
             </div>

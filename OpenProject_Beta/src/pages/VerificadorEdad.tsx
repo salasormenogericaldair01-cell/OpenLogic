@@ -49,7 +49,7 @@ export default function VerificadorEdad() {
         {resultado && (
           <div style={{
             fontSize: '2rem', fontWeight: '700',
-            background: 'var(--card-bg)', borderRadius: '24px',
+            background: 'var(--bg-card)', borderRadius: '24px',
             padding: '1.5rem 3rem',
             boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
             color: resultado.includes('✅') ? '#22c55e' : resultado.includes('❌') ? '#ef4444' : '#f59e0b'
