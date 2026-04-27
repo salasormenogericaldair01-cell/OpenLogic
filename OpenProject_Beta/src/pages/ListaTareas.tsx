@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface Tarea {
   id: number
@@ -7,8 +7,15 @@ interface Tarea {
 }
 
 export default function ListaTareas() {
-  const [tareas, setTareas] = useState<Tarea[]>([])
+  const [tareas, setTareas] = useState<Tarea[]>(() => {
+    const guardadas = localStorage.getItem('tareas')
+    return guardadas ? JSON.parse(guardadas) : []
+  })
   const [input, setInput] = useState('')
+
+  useEffect(() => {
+    localStorage.setItem('tareas', JSON.stringify(tareas))
+  }, [tareas])
 
   const agregar = () => {
     if (input.trim() === '') return
